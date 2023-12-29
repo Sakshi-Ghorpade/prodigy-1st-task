@@ -1,0 +1,430 @@
+<!--  -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /*Header*/
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #1b1818;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(248, 232, 232);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: rgb(16, 155, 231);
+  color: rgb(249, 245, 245);
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: rgb(14, 154, 248);
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+/*sidenavigations*/
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 125px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 12px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#services {
+  top: 200px;
+  background-color: #04AA6D;
+}
+
+#feedback {
+  top: 250px;
+  background-color: #2196F3; /* Blue */
+}
+
+#gallary {
+  top: 300px;
+  background-color: #f44336; /* Red */
+}
+
+
+
+/*Main Page*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 80%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Images used */
+
+
+
+.background { background-image: url("background.png"); }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+  border: 10px solid #ebe7e7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  /*columns*/
+
+.column {
+  float: left;
+  width: 50%;
+  background-color: rgb(112, 93, 93);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "   ..";
+  display: table;
+  clear: both;
+}
+.columns {
+  float: left;
+  width: 50%;
+  background-color:rgb(112, 93, 93);  
+}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Image slider*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 70%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <a href="logo" class="logo"><img src="copanylogo1.png" height="70"> </a>
+    <div class="header-right">
+      <a class="active" href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="Order.html">Order Now</a>
+    </div>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="services.html" id="services">SERVICES</a>
+    <a href="feedback.html" id="feedback">FEEDBACK</a>
+    <a href="Gallary.html" id="gallary">GALLARY</a>
+
+  </div>
+<div class="bg-image background"></div>
+<div class="bg-text">Pokket Cafe<br>
+  </div>
+  <center><h1>OUR DELICIOUS MENU</h1>
+  <h2>---------------------------------------------------------</h2>
+  <h4>Select from the mouth-watering and affordable dishes.<br>
+     We offer you a range of choices which does not even affect your pocket.<br>
+Get the maximum satisfaction but pay the minimum!!!</h4></center>
+<div class="row" >
+  <div class="column">
+   <center><h3>COFFEE'S</h3>
+    <img src="coffee2.png" width="168"><br>
+    <p>Whatever be the mood you are in, coffee makes everything right.<br>
+     Pick your cup from a wide range of coffee flavours from our menu and <br>refresh your senses.</p></center>
+  </div>
+  <div class="column">
+    <center><h3>BORN FOR BURGER</h3>
+      <img src="burger.png" width="100"><br>
+   
+      <p>Luscious buns with juicy filing and greasy sauces are just irresistible. <br>
+      Crunchy on the outside and soft inside, Our Cafè burgers will be your <br> best pick..
+      We all need to make time for burger once in a while  !!!</p>                                                                              
+    </center>
+  </div>
+  <br>
+</div class="rows">
+<div class="columns">
+  <center><h3>PIZZA ON FIRE</h3>
+    <img src="pizza.png" width="100"><br>
+    <p>Triangles which will satisfy your hunger from every angle. <br>
+    From margarita to italiano we serve you with the best of everything.<br>
+    Cheesy slice of heaven that are not intended for sharing<br></p>>
+    
+  </div>
+</center>
+</div>
+<div class="columns">
+  <center><h3>PASTA'S</h3>
+    <img src="pasta.png" width="144" height="120"><br>
+    <p >Perfect blend of sauces and rightly cooked macronies will melt in your <br>
+    mouth and you could also be found licking the overflowing creamy texture. Penne to Pesto we have it all.</p>
+</center>
+</div><hr><hr>
+ <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="img1.png" style="width:100%">
+    <div class="text">Rise & Grid</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="imgg2.png" style="width:100%">
+    <div class="text">Rise & Grid</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img3.png" style="width:100%">
+    <div class="text">Rise & Grid</div>
+  </div>
+<div>
+
+</div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+  <link rel="stylesheet" href="style.css">
+  <!DOCTYPE html>
+  <!-- Created By CodingLab - www.codinglabweb.com -->
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+      <!--<title> Responsive Footer | CodingLab</title>--->
+      <link rel="stylesheet" href="style.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     </head>
+  <body>
+   <footer>
+     <div class="content">
+       <div class="left box">
+         <div class="upper">
+           <div class="topic">About us</div>
+           <p>We intend to reach people even with the smallest pocket size, by making fast food available at the most economic cost. But without compromising the quality of our food. Pokket 
+
+          </p>
+         </div>
+         <div class="lower">
+           <div class="topic">Contact us</div>
+           <div class="phone">
+             <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+           </div>
+           <div class="email">
+             <a href="#"><i class="fas fa-envelope"></i>Pokketcafe789@gmail.com</a>
+           </div>
+         </div>
+       </div>
+       <div class="middle box">
+         <div class="topic">Features</div>
+         <div><a href="#">Pokket friendly Celebrations</a></div>
+         <div><a href="#">Mouth-watering and affordable dishes</a></div>
+         <div><a href="#">Good Quality Food...</a></div>
+         <div><a href="#">Skilled Management.</a></div>
+         <div><a href="#">Prioritize Hygiene.</a></div>
+         <div><a href="#">Positive Guest Experience</a></div>
+       </div>
+       <div class="right box">
+         <div class="topic"> Visit us</div>
+         <form action="#">
+           <input type="text" placeholder="Enter email address">
+           <input type="submit" name="" value="Send">
+           <div class="media-icons">
+             <a href="#"><i class="fab fa-facebook-f"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+             <a href="#"><i class="fab fa-snapchat"></i></a>
+             <a href="#"><i class="fab fa-youtube"></i></a>
+             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+           </div>
+         </form>
+       </div>
+     </div>
+     <div class="bottom">
+       <p>Copyright © 2020 <a href="#"></a> All rights reserved</p>
+     </div>
+   </footer>
+  
+  </body>
+  </html>
+  
+  </body>
+</html>

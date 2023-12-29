@@ -1,0 +1,220 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+          /*Header*/
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #1b1818;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(248, 232, 232);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: rgb(45, 42, 42);
+  color: rgb(249, 245, 245);
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+/*main content*/
+     /* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  background-color: black;
+  color: white;
+  padding-left: 50px;
+  padding-right: 700px;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  background: 50px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* snapchat */
+.fa-snapchat {
+  background: #55ACEE;
+  color: white;
+}
+/* instagram */
+.fa-instagram {
+  background: #3B5998;
+  color: white;
+}
+
+        
+            .* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: rgb(7, 7, 7);
+  color: white;
+}
+
+.fa {font-size:50px;}
+       
+        </style>
+    </head>
+    <body>
+      
+      <div class="header">
+        <a href="logo" class="logo"><img src="copanylogo1.png" height="70"> </a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="Order.html">Order Now</a>
+        </div>
+      </div>
+      
+      <div class="container">
+        <img src="blank.png" alt="Norway" style="width:100%; height:70%;">
+        <div class="text-block">
+          <h1>About us...</h1>
+          <p>We intend to reach people even with the smallest pocket size,
+            by making fast food available at the most economic cost. <br>
+            But without compromising the quality of our food. 
+            Our cafe wants to add tasty and joyful foodie moments into the lives of people.
+
+          </p>
+          <h2>Social Media...</h2>
+          <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-snapchat"></a>
+<a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+      <center>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <p
+            h1><i class="fa fa-user"></i></h1>
+            <h3>10000+</h3>
+            <p>Events</p>
+          </div>
+        </div>
+      
+        
+      
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-smile-o"></i></p>
+            <h3>40000+</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-coffee"></i></p>
+            <h3>100000+</h3>
+            <p>coffee sold</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <p><i class="fa fa-smile-o"></i></p>
+            <h3>40000+</h3>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+      </div>
+    </center>
+    </body>

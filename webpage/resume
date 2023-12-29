@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>cv code</title><b><h1><i><u>Make a resume</u></i></h1>
+ </head>
+ <body>
+    <table style="border: 3px solid #033E3E;">
+        <tr>
+            <td>
+                <center>
+                    <h1 style="border:#7fffd4;background-color:yellow;border-width:2px;border style:solid hspace=100px;">
+                        resume
+                    </h1>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="C:\Users\poonam Gulab Inagale\Desktop\p\ingale.jpeg"width="99px"height="90" align="right">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>&nbsp;&nbsp;poonam gulab ingale</b><br>
+                   &nbsp;&nbsp;Atpost.kumathe<br>&nbsp; <tal class="koregon"></tal><br>
+                   &nbsp;&nbsp;dist-satara<br>
+                   &nbsp;&nbsp;state-Maharastra<br>
+                   &nbsp;&nbsp;mob no-9689710102<br>
+                   &nbsp;&nbsp;pin code-415501<br>
+                   &nbsp;&nbsp;email id.ingalepoonam259@gmail.com<br>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 style="border:#033E3E;"background-color:#7fffd4;border-style:solid haspace="100px">
+                        <p style="color:#c32148;">
+                            OBJECTIVES
+                        </h3>
+                </td>&nbsp;
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;= I want to work with a prograssive organization where i could utilize my knowledge & skills for mutual growth
+                </td>
+                <tr> 
+                    <td>
+                        <h3 style="border;#033E3E;background-color:#7fffd4; border-width:2px: border-style:soild hspace="100px>
+                            <p style="color:#c32148">
+                                <br>TECHIHICAL skills
+                        </h3>
+                    </td>
+                </tr>
+                <tr> 
+                    <td> 
+                        &nbsp;&nbsp;=   Good Knowlage in mobile and web appllication tasking
+                    </td>
+                </tr>
+                <tr>
+                    <td><br><br>
+                    </td>
+                
+                    </td>
+                </tr>

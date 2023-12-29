@@ -1,0 +1,239 @@
+<html>
+    <head>
+    
+        <style>
+            /*Header*/
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #1b1818;
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: rgb(248, 232, 232);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: rgb(45, 42, 42);
+  color: rgb(249, 245, 245);
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: rgb(15, 15, 16);
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+/*title line*/
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("ordertitle.png");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+            /*Main content*/
+            * {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+/*Rating*/
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <a href="logo" class="logo"><img src="copanylogo1.png" height="70"> </a>
+            <div class="header-right">
+              <a class="active" href="index.html">Home</a>
+              <a href="contact.html">Contact</a>
+              <a href="about.html">About</a>
+              <a href="about.html">Order Now</a>
+            </div>
+          </div>
+          <div class="bg-image"></div>
+
+<div class="bg-text">
+  <h1 style="color: black;">Order Now...</h1>
+  
+</div>
+        <div class="columns">
+            <ul class="price">
+              <li class="header">Pizza</li>
+              <center><img src="img2.png" width="250"></center>
+              <li> Price: 299/-</li>
+              <li class="grey"><a href="#" class="button" onclick="myFunction()">Order Now</a></li>
+            </ul>
+          </div>
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Burger</li>
+              <center><img src="img3.png" width="250"></center>
+              <li> Price: 199/-</li>
+              <li class="grey"><a href="#" class="button" onclick="myFunction()">Order Now</a></li>
+            </ul>
+          </div>
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Fries</li>
+              <center><img src="fries.png" width="200"></center>
+              <li> Price: 99/-</li>
+              <li class="grey"><a href="#" class="button" onclick="myFunction()">Order Now</a></li>
+            </ul>
+          </div>
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Pasta</li>
+              <center><img src="img1.png" width="250"></center>
+              <li> Price: 399/-</li>
+              <li class="grey"><a href="#" class="button"  onclick="myFunction()">Order Now</a></li>
+            </ul>
+          </div>
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Cold Coffee</li>
+              <center><img src="Cold-Coffee.png" width="250"></center>
+              <li> Price: 59/-</li>
+              <li class="grey"><a href="#" class="button" onclick="myFunction()">Order Now</a></li>
+            </ul>
+          </div>
+          <div class="columns">
+            <ul class="price">
+              <li class="header">Soulmate Sandwich</li>
+              <center><img src="sandwich.png" width="250"></center>
+              <li> Price: 149/-</li>
+              <li class="grey"><a href="#" class="button" onclick="myFunction()">Order Now</a></li>
+            </ul>
+          </div>
+          
+          <script>function myFunction() {
+            alert("Ordered Succeffully!!!    Get order order in 30 min");
+           
+          }</script>
+    </body>
+</html>
